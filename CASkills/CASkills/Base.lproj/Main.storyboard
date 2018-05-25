@@ -69,11 +69,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INe-fA-0Xx">
-                                <rect key="frame" x="228" y="119" width="108" height="30"/>
+                                <rect key="frame" x="227" y="119" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ChangePosition"/>
+                                <state key="normal" title="Basic Animation"/>
                                 <connections>
                                     <action selector="changeColor:" destination="mEp-zd-d5k" eventType="touchUpInside" id="UPp-Z8-BIC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jN5-dB-nWp">
+                                <rect key="frame" x="48" y="82" width="102" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhE-3U-wu9">
+                                        <rect key="frame" x="30" y="0.0" width="37" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-bD-pO4">
+                                <rect key="frame" x="214" y="229" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="KeyFrameAnimation"/>
+                                <connections>
+                                    <action selector="keyframeAnimation:" destination="mEp-zd-d5k" eventType="touchUpInside" id="52F-Hh-9iI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-na-jhd">
+                                <rect key="frame" x="228" y="318" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Virtual Property"/>
+                                <connections>
+                                    <action selector="virtualPropertyTest:" destination="mEp-zd-d5k" eventType="touchUpInside" id="ihI-wJ-dkj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIY-wh-8nU">
+                                <rect key="frame" x="227" y="393" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GroupAnimation"/>
+                                <connections>
+                                    <action selector="groupAnimationTest:" destination="mEp-zd-d5k" eventType="touchUpInside" id="M4Z-hm-49l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,10 +119,13 @@
                         <viewLayoutGuide key="safeArea" id="r3z-wm-U7v"/>
                     </view>
                     <navigationItem key="navigationItem" id="hmv-ft-Zcw"/>
+                    <connections>
+                        <outlet property="blueView" destination="jN5-dB-nWp" id="QRd-yR-iuF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NK-qn-Vwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="118"/>
+            <point key="canvasLocation" x="1580" y="117.39130434782609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NHY-zA-JAk">
